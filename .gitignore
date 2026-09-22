@@ -15,6 +15,7 @@ composer.dev.lock
 .phpunit.result.cache
 .phpunit.cache
 /.phpstan.cache/
+/.phpstan-fixtures-cache/
 
 # Editors and operating systems
 .idea/

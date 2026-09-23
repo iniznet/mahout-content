@@ -1800,7 +1800,7 @@
             "dist": {
                 "type": "path",
                 "url": "../mahout-devtools",
-                "reference": "dabeefa6983e042e9b788bfaa9e2339386dc2c28"
+                "reference": "1c99b4a2f9318cfc0b15bdef4ef59f551d52c9a1"
             },
             "require": {
                 "friendsofphp/php-cs-fixer": "^3.64",

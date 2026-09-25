@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9535579c8e9d970bf87c6d30b68d92fe",
+    "content-hash": "621b9c2bc9179468f6d8d55ceada9ea0",
     "packages": [
         {
             "name": "iniznet/mahout-kernel",
@@ -6952,6 +6952,6 @@
     "platform": {
         "php": ">=8.4"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.9.0"
 }

@@ -369,7 +369,6 @@ only the following, deviations. Each is an ADR, not an edit to the contract.
 | The definition classes validate nothing at construction; every key, namespace and permission rule runs at registration, in the registrar | The doctor and the rewrite-collision check consume definitions as data, and one validation path means a future construction site inherits the rules by calling the registrar instead of copying checks | 0001 |
 | Post types and taxonomies register immediately at the call site; a REST route's core call is deferred to `rest_api_init` | Core polices only `register_rest_route()` by time — it raises `_doing_it_wrong()` before `rest_api_init` — while `WP_Rewrite` already exists at boot. One path per kind, no mode switch | 0002 |
 | The rewrite-collision check is a pure domain class composed into the doctor by a dev-only script | The devtools doctor builds its check list inline and must never grow a branch; `Contracts\\Check` is the designed seam | 0003 |
-| The committed `composer.lock` is resolved through the uncommitted path repositories | Both `mahout-kernel` (a `require`) and `mahout-devtools` (a `require-dev`) are unpublished siblings, and REP-11 forbids a committed `path` repository | 0004 |
 
 No other rule in this document is relaxed. In particular: no reflection, no
 service locator reached for statically, no trait, no dynamic property, no

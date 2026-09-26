@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "621b9c2bc9179468f6d8d55ceada9ea0",
+    "content-hash": "b281606ff20e53b1c26794a7803c3c20",
     "packages": [
         {
             "name": "iniznet/mahout-kernel",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iniznet/mahout-kernel.git",
+                "reference": "7216af3aa13bb059a73955edf19e241855ffe52a"
+            },
             "dist": {
-                "type": "path",
-                "url": "../mahout-kernel",
-                "reference": "7c006ea3466e272f495d509518739f8930138f1d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/iniznet/mahout-kernel/zipball/7216af3aa13bb059a73955edf19e241855ffe52a",
+                "reference": "7216af3aa13bb059a73955edf19e241855ffe52a",
+                "shasum": ""
             },
             "require": {
                 "php": ">=8.4"
@@ -20,6 +26,7 @@
             "require-dev": {
                 "iniznet/mahout-devtools": "^1.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -80,7 +87,6 @@
                     "@format:check",
                     "@stan",
                     "@psalm",
-                    "@arch",
                     "@rector",
                     "@test",
                     "@hooks:check",
@@ -100,10 +106,11 @@
                 "mahout",
                 "wordpress"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/iniznet/mahout-kernel/tree/main",
+                "issues": "https://github.com/iniznet/mahout-kernel/issues"
+            },
+            "time": "2026-09-25T13:52:02+00:00"
         }
     ],
     "packages-dev": [
@@ -1797,10 +1804,16 @@
         {
             "name": "iniznet/mahout-devtools",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../mahout-devtools",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iniznet/mahout-devtools.git",
                 "reference": "1c99b4a2f9318cfc0b15bdef4ef59f551d52c9a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iniznet/mahout-devtools/zipball/1c99b4a2f9318cfc0b15bdef4ef59f551d52c9a1",
+                "reference": "1c99b4a2f9318cfc0b15bdef4ef59f551d52c9a1",
+                "shasum": ""
             },
             "require": {
                 "friendsofphp/php-cs-fixer": "^3.64",
@@ -1811,6 +1824,7 @@
                 "vimeo/psalm": "^6.0",
                 "yoast/phpunit-polyfills": "^1.1"
             },
+            "default-branch": true,
             "bin": [
                 "bin/mahout-devtools"
             ],
@@ -1902,10 +1916,11 @@
                 "tooling",
                 "wordpress"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/iniznet/mahout-devtools/tree/main",
+                "issues": "https://github.com/iniznet/mahout-devtools/issues"
+            },
+            "time": "2026-09-22T15:24:24+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -6942,16 +6957,13 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {
-        "iniznet/mahout-devtools": 20,
-        "iniznet/mahout-kernel": 20
-    },
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.4"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.9.0"
 }

@@ -11,6 +11,16 @@
         "taxonomy",
         "rest"
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/iniznet/mahout-kernel.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/iniznet/mahout-devtools.git"
+        }
+    ],
     "require": {
         "php": ">=8.4",
         "iniznet/mahout-kernel": "^1.0"

@@ -17,12 +17,31 @@
 
 declare(strict_types=1);
 
-$autoload = dirname(__DIR__).'/vendor/autoload.php';
-if (!is_file($autoload)) {
+// Installed as a dependency this file sits at vendor/iniznet/mahout-content/bin, so the
+// consuming project's autoloader is three levels up, not beside the source: a fixed
+// dirname(__DIR__) lookup only ever finds this package's own development vendor.
+$candidates = [
+    dirname(__DIR__, 3) . '/autoload.php',
+    getcwd() . '/vendor/autoload.php',
+    dirname(__DIR__) . '/vendor/autoload.php',
+];
+
+$loaded = null;
+
+foreach ($candidates as $candidate) {
+    if (is_file($candidate)) {
+        $loaded = $candidate;
+
+        break;
+    }
+}
+
+if (null === $loaded) {
     fwrite(STDERR, 'FAIL: vendor/autoload.php is missing; run composer install'.PHP_EOL);
     exit(1);
 }
-require_once $autoload;
+
+require_once $loaded;
 
 $definitions = [];
 $model = $argv[1] ?? null;

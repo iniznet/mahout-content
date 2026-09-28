@@ -382,5 +382,5 @@ registration at file scope, and no `@phpstan-ignore`.
 The canonical planning corpus records the reasoning, the rejected alternatives
 and the delivery roadmap. It is private and is not published with this
 repository, so this document stands alone on purpose. The package-scoped
-decisions are under `docs/decisions/`; the generated hook reference is
-`docs/reference/hooks.md`; the package's own documents are under `docs/`.
+decisions are under `docs/decisions/`; the generated hook references are
+`docs/reference/actions.md` and `docs/reference/filters.md`; the package's own documents are under `docs/`.

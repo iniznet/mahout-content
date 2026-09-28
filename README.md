@@ -126,7 +126,7 @@ Every documented public class is part of the stable surface within a major.
 The package emits four filters — `mahout/content/post_type_args`,
 `mahout/content/taxonomy_args`, `mahout/content/rest_route_args` and
 `mahout/content/rest_payload` — and attaches one core hook, `rest_api_init`.
-The generated reference is `docs/reference/hooks.md`; the hooks and their
+The generated references are `docs/reference/actions.md` and `docs/reference/filters.md`; the hooks and their
 argument contracts are documented in `docs/extending.md`.
 
 ## Compatibility

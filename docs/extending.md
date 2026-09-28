@@ -7,8 +7,8 @@ service locator and no other hook.
 
 ## The hooks this package emits
 
-Declared on the `Hooks` class; the generated reference is
-`docs/reference/hooks.md`. Names are `mahout/{package}/{event}` and never
+Declared on the `Hooks` class; the generated references are
+`docs/reference/actions.md` and `docs/reference/filters.md`. Names are `mahout/{package}/{event}` and never
 appear inline.
 
 | Hook | Type | Fires with | When |
